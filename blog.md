@@ -1,5 +1,11 @@
 ### **Josh Dale's Blog**
 
+This is my first blog post of many documenting my journey through the process of becoming a web developer.
+
+![Me](https://github.com/Joshtdale/joshtdale.github.io/blob/new-branch/Images/IMG_0917.jpg?raw=true)
+
+
+
 #### First week of Coding Bootcamp
 
 ### -**Was your first week what you expected? Why? Why not?**
@@ -15,6 +21,7 @@ I can't wait to get more experience with the tools we are using in this course s
 
 I love building things and seeing results. I've always been a tinkerer. When I was a kid, I would take apart all my toy and try to put them back together. In middle school, I taught myself to solder and rewire my guitars. This skill proved useful in college when I quickly became the guy everyone went to for electric instrument repairs and modifications.
 
+
 ### **Code**
 
 This is my simple styling for this blog post.
@@ -26,6 +33,15 @@ This is my simple styling for this blog post.
         color: black;
     }
 
+    img {
+        height: 150vh;
+    }
+
+    .markdown-body pre{
+        background-color: black;
+        opacity: 0.5;
+    }
+
 </style>
 ~~~
 
@@ -34,6 +50,15 @@ This is my simple styling for this blog post.
     body{
         background-color: #4a6350;
         color: black;
+    }
+
+    img {
+        height: 150vh;
+    }
+
+    .markdown-body pre{
+        background-color: black;
+        opacity: 0.5;
     }
 
 </style>

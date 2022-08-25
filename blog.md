@@ -53,7 +53,7 @@ This is my simple styling for this blog post.
     }
 
     img {
-        height: 150vh;
+        height: 100vh;
     }
 
     .markdown-body pre{

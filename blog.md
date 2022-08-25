@@ -14,3 +14,26 @@ I can't wait to get more experience with the tools we are using in this course s
 ### -**What is something about you that can only be learned by reading this blog?**
 
 I love building things and seeing results. I've always been a tinkerer. When I was a kid, I would take apart all my toy and try to put them back together. In middle school, I taught myself to solder and rewire my guitars. This skill proved useful in college when I quickly became the guy everyone went to for electric instrument repairs and modifications.
+
+### **Code**
+
+This is my simple styling for this blog post.
+~~~
+<style>
+
+    body{
+        background-color: #4a6350;
+        color: black;
+    }
+
+</style>
+~~~
+
+<style>
+
+    body{
+        background-color: #4a6350;
+        color: black;
+    }
+
+</style>

@@ -47,4 +47,9 @@ This is my simple styling for this blog post.
         height: 150vh;
     }
 
+    .markdown-body pre{
+        background-color: black;
+        opacity: 0.5;
+    }
+
 </style>

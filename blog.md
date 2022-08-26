@@ -2,7 +2,9 @@
 
 This is my first blog post of many documenting my journey through the process of becoming a web developer.
 
-![Me](https://github.com/Joshtdale/joshtdale.github.io/blob/new-branch/Images/IMG_0917.jpg?raw=true)
+
+### **A little about me**
+I love building things and seeing results. I'm hoping these characteristics are a good indicator that I will enjoy a career in web development. When I was a kid, I would take apart all my toys and try to put them back together. In middle school, I taught myself to solder and rewire my guitars. This skill proved useful in college when I quickly became the guy everyone went to for electric instrument repairs and modifications.
 
 
 
@@ -19,7 +21,11 @@ I can't wait to get more experience with the tools we are using in this course s
 
 ### -**What is something about you that can only be learned by reading this blog?**
 
-I love building things and seeing results. I've always been a tinkerer. When I was a kid, I would take apart all my toy and try to put them back together. In middle school, I taught myself to solder and rewire my guitars. This skill proved useful in college when I quickly became the guy everyone went to for electric instrument repairs and modifications.
+In college I was in a band that would travel and play at youth group conferences.
+
+![Me](https://github.com/Joshtdale/joshtdale.github.io/blob/new-branch/Images/IMG_0917.jpg?raw=true)
+
+
 
 
 ### **Code**
@@ -42,6 +48,8 @@ This is my simple styling for this blog post.
         opacity: 0.5;
     }
 
+    
+
 </style>
 ~~~
 
@@ -53,7 +61,7 @@ This is my simple styling for this blog post.
     }
 
     img {
-        height: 50vh;
+        height: 100vh;
     }
 
     .markdown-body pre{
@@ -61,4 +69,5 @@ This is my simple styling for this blog post.
         opacity: 0.5;
     }
 
+   
 </style>

@@ -23,7 +23,7 @@ I can't wait to get more experience with the tools we are using in this course s
 
 In college I was in a band that would travel and play at youth group conferences.
 
-![Me](https://github.com/Joshtdale/joshtdale.github.io/blob/new-branch/Images/IMG_0917.jpg?raw=true)
+![Me](https://github.com/Joshtdale/joshtdale.github.io/blob/main/Images/IMG_0917.jpg?raw=true)
 
 
 

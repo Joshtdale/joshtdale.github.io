@@ -68,6 +68,9 @@ This is my simple styling for this blog post.
         background-color: black;
         opacity: 0.5;
     }
-
+    
+    .highlight {
+    background-color: none;
+}
    
 </style>

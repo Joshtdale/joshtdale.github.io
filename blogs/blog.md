@@ -1,12 +1,14 @@
 ### **Josh Dale's Blog**
 
+---
+
 This is my first blog post of many documenting my journey through the process of becoming a web developer.
 
 
 ### **A little about me**
 I love building things and seeing results. I'm hoping these characteristics are a good indicator that I will enjoy a career in web development. When I was a kid, I would take apart all my toys and try to put them back together. In middle school, I taught myself to solder and rewire my guitars. This skill proved useful in college when I quickly became the guy everyone went to for electric instrument repairs and modifications.
 
-
+---
 
 #### First week of Coding Bootcamp
 

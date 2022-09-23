@@ -9,3 +9,5 @@
 [End of week three](https://joshtdale.github.io/blogs/blog4)
 
 [End of week four](https://joshtdale.github.io/blogs/blog5)
+
+[Blog design](https://joshtdale.github.io/wireframe/wireframe)

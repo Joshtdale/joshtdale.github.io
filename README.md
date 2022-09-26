@@ -10,4 +10,6 @@
 
 [End of week four](https://joshtdale.github.io/blogs/blog5)
 
+[End of Bootcamp week 1](https://joshtdale.github.io/blogs/blog6)
+
 [Blog design](https://joshtdale.github.io/wireframe/wireframe)

@@ -16,3 +16,4 @@
 
 [End of Bootcamp week 2](https://joshtdale.github.io/blogs/blog7)
 
+[Contact card](https://joshtdale.github.io/pages/contact.html)

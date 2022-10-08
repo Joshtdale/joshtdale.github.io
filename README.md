@@ -1,5 +1,7 @@
 # This is my blog
 
+[Landing page](https://joshtdale.github.io/index)
+
 [Inro post](https://joshtdale.github.io/blogs/blog)
 
 [End of week one](https://joshtdale.github.io/blogs/blog2)
@@ -16,4 +18,6 @@
 
 [End of Bootcamp week 2](https://joshtdale.github.io/blogs/blog7)
 
-[Contact card](https://joshtdale.github.io/pages/contact.html)
+[Blog sprint 3](https://joshtdale.github.io/pages/blog-post-sprint-3)
+
+[Contact card](https://joshtdale.github.io/pages/contact)

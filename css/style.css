@@ -1,0 +1,35 @@
+body{
+    background-color: #4a6350;
+    color: white;
+}
+
+.jumbotron {
+    /* background-image: url('./images/IMG_7183.jpg'); */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    /* mix-blend-mode: darken; */
+}
+
+.heroText {
+    /* height: 75vh; */
+    margin-top: 0vh;
+}
+
+.bioText {
+    margin-top: 40vh;
+    margin-left: 20vw;
+}
+
+/* .col-sm-12 {
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* height: 100vh; */
+    /* background-position: -400px 100px; */
+/* } */ 
+
+/* svg {
+    background-color: #4a6350;
+} */

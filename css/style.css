@@ -24,6 +24,14 @@ body{
     margin-left: 20vw;
 }
 
+.tic-tac-toe {
+    background-position: center;
+    background-size: cover;
+}
+
+/* .cardText {
+    margin-top: 200px;
+} */
 /* .col-sm-12 {
     background-repeat: no-repeat;
     /* background-size: cover; */
@@ -34,3 +42,8 @@ body{
 /* svg {
     background-color: #4a6350;
 } */
+
+.portCard {
+    height: 30vh;
+    margin-top: 20px;
+}

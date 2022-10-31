@@ -1,3 +1,6 @@
+import skullIcon from './images/skull.png';
+import './Navbar.css'
+
 function Navbar(){
     return (
         <header className="p-3 text-bg-dark">
@@ -7,7 +10,7 @@ function Navbar(){
                     {/* <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                         <use xlink:href="#bootstrap"></use>
                     </svg> */}
-                    <img src="./images/skull.png" className="bi me-2" width="40" role="img"></img>
+                    <img src={skullIcon} className="bi me-2" width="40" role="img"></img>
                 </a>
 
                 <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">

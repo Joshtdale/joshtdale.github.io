@@ -1,0 +1,14 @@
+.jumbotron {
+background-image: url(./images/IMG_4905.jpg);
+height: 100vh;
+}
+.home-container {
+    height: 100vh;
+    /* background-image: url(./images/IMG_4905.jpg); */
+}
+
+.home-bottom{
+    height: 50vh;
+    background-color: #4a6350;
+    z-index: 2;
+}

@@ -8,21 +8,21 @@
 }
 
 .mind-reader {
-    background-image: url('/images/mind-reader.png');
+    background-image: url('./images/mind-reader.png');
 }
 
 .alarm-clock {
-    background-image: url('/images/alarm-clock.png');
+    background-image: url('./images/alarm-clock.png');
 }
 
 .scary-story-generator {
-    background-image: url('/images/scary-story-generator.png');
+    background-image: url('./images/scary-story-generator.png');
 }
 
 .thundercat {
-    background-image: url('/images/thundercat.png');
+    background-image: url('./images/thundercat.png');
 }
 
 .weather-app {
-    background-image: url('/images/weather-app.png');
+    background-image: url('./images/weather-app.png');
 }

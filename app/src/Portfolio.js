@@ -12,7 +12,7 @@ const baseClasses = 'card portfolioCards card-cover h-100 overflow-hidden text-b
                         
                         <ul className="d-flex list-unstyled mt-auto">
                             <li className="me-auto">
-                                <a href="https://5500-joshtdale-tictactoe-6dwwaoasjxs.ws-us70.gitpod.io/index.html"><button className="btn btn-secondary">View project</button></a>
+                                <a href={props.link}><button className="btn btn-secondary">View project</button></a>
                             </li>
                             
                             <li className="d-flex align-items-center">
@@ -28,11 +28,21 @@ const baseClasses = 'card portfolioCards card-cover h-100 overflow-hidden text-b
     )
 };
 
+
 function Portfolio() {
     return (
-        <div className="row m-5">
-            <PortfolioCard project={'tic-tac-toe'}/>
-        </div>
+        <>
+            <div className="row m-5">
+                <PortfolioCard project={'tic-tac-toe'} link={'https://joshtdale.github.io/tic-tac-toe/'}/>
+                <PortfolioCard project={'mind-reader'}/>
+                <PortfolioCard project={'alarm-clock'}/>
+            </div>
+            <div className="row m-5">
+                <PortfolioCard project={'scary-story-generator'}/>
+                <PortfolioCard project={'thundercat'}/>
+                <PortfolioCard project={'weather-app'}/>
+            </div>
+        </>
     )
 };
 

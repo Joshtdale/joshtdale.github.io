@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
+import Portfolio from './Portfolio';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Navbar setPage={setPage}/>
       {page == 'Home' && <Home />}
+      {page == 'Portfolio' && <Portfolio />}
     </div>
   );
 }

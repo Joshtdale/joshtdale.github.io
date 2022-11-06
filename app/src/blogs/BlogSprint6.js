@@ -6,7 +6,7 @@ function BlogSprint6() {
         <div className="row justify-content-center text-center">
             {/* <div className="col"></div> */}
             <div className="col-10 mt-5">
-                <h1>The halfway mark</h1>
+                <h1>The halfway mark (Our first week of Python 🐍)</h1>
                 <p></p>
 
             </div>
@@ -17,31 +17,50 @@ function BlogSprint6() {
                 <h3 className="text-center mb-4">Weekly Q&A</h3>
                 <ul>
                     <li>
-                        <h5>What have you learned about CLIs? Do you think they are scary?</h5>
-                        <p>CLIs can be a big help in helping the user get around within an operating system. If you know your
-                            way around a CLI, you can quickly input commands, parameters, and call functions to accomplish tasks
-                            much quicker than trying to fumble around the interface of your os (operating system). I so far have a 
-                            very limited understanding of CLIs and pretty much only know how to use it for commits, pushes, and 
-                            branch creation. In the future I would like to spend more time learning how to become a CLI wizard 
-                            but at the moment it seems like a whole other language to me.
+                        <h5>Now that you are halfway through bootcamp, what has been the biggest hurdle 
+                          that you have gone past? What do you think is going to be the next biggest thing 
+                          to power through?</h5>
+                        <p>
+                          The toughest thing I've had to deal with so far is time management. I definitely haven't gotten 
+                          past it yet either. I'm really enjoying this journey of learning how to program but it's been 
+                          really hard trying to find a work life balance. I have a pregnant wife at home and we both are 
+                          so busy during the week so I really try to keep the amount of work that I do outside of class 
+                          down to a minimum. I struggle with the thought that I might be doing myself a disservice 
+                          and that I should put more work in outside of class, especially when I see and hear about 
+                          how much extra work some of my other classmates are putting in. Although so far I don't feel like 
+                          I have put myself in a bad spot. Somehow I think I'm managing to keep up with the class and I don't 
+                          feel like my work is coming out less than average. I'm telling myself that as soon as my projects start 
+                          to suffer is when I'll kick it into overdrive outside of class time. So far nothing has been a bigger 
+                          hurdle than this and I don't see anything else being harder than it.
                         </p>
                     </li>
 
                     <li>
-                        <h5>If you were to build a CLI, what would it do?</h5>
-                        <p>Since I'm basically a baby when it comes to my CLI knowledge and vocabulary, I don't know that I'm in any real
-                            position to answer this question. Maybe I would make things dumbed down a bit so that some of the commands 
-                            are a little more intuitive. Although I'm sure the creators of each different CLI and people with a lot of 
-                            experience think that it is super intuitive.
-                        </p>
+                        <h5>Compared to earlier, what are three ideas you might want to do for your final project? 
+                          Are they the same ideas as before, or have they changed now that you understand more 
+                          about the technology and your limitations?</h5>
+                        <ol>
+                          <li>Small business website</li>
+                            <p>From the start of the bootcamp I had the idea to make a website for my friend's coffee 
+                              cart business. I think it would be a good project for me since I think the strongest projects 
+                              I've had so far have been front-end forward. The website would need to have a form for business 
+                              inquiries and I could add e-commerce to the site. I think this would have a good amount of back-end 
+                              so that way I can show my back-end abilities as well as my skills with front-end design.
+                            </p>
+                          <li>Discord/messaging app clone</li>
+                            <p>I don't have many ideas for this yet as I have been really focused form the start on implementing my 
+                              first idea as my final project. I think a messaging app could be a fun build as I could put a creative 
+                              spin on it possibly. However it does scare me as I have no idea even where to start with it. I foresee 
+                              myself wasting a lot of time on the front-end.
+                            </p>
+                          <li></li>
+                        </ol>
                     </li>
 
                     <li>
-                        <h5>List some ideas that without a Framework, would take you a long time to code</h5>
-                            <p>Frameworks add a level of abstraction to your code so that there are less meticulous things for 
-                                you to worry about. They simplify many things that would other wise be complicated. For instance, React 
-                                gives you the ability to build elements and reuse them. This saves a ton of time when you are building
-                                webpages because you only have to build things like a navbar once for example.
+                        <h5>What surprised you about your first week in Python and how was it different from 
+                          your first week in JavaScript?</h5>
+                            <p>
                             </p>
                     </li>
 

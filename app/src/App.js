@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
 import Portfolio from './Portfolio';
+import Blog from './Blog';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar setPage={setPage}/>
       {page == 'Home' && <Home />}
       {page == 'Portfolio' && <Portfolio />}
+      {page == 'Blog' && <Blog />}
     </div>
   );
 }

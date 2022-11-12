@@ -9,7 +9,9 @@
 
 .portfolioIframe {
     height: 30vh;
+    /* width: 100%; */
 }
+
 
 .tic-tac-toe {
     background-image: url('./images/tic-tac-toe.png');

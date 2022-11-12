@@ -3,6 +3,14 @@
     background-size: cover;
 }
 
+/* .portCard {
+    height: 30vh;
+} */
+
+.portfolioIframe {
+    height: 30vh;
+}
+
 .tic-tac-toe {
     background-image: url('./images/tic-tac-toe.png');
 }
@@ -26,3 +34,4 @@
 .weather-app {
     background-image: url('./images/weather-app.png');
 }
+

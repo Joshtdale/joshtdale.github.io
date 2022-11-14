@@ -47,11 +47,12 @@ const blogList = [
 
 function BlogTeaser(props) {
 
-
+    let elementKey = 0
     return (
         blogList.map((item) => {
+            elementKey += 1
             return (
-                <div className="row">
+                <div className="row" key={elementKey}>
                     <div className="col p-4 d-flex flex-column bg-dark bg-opacity-50 position-static m-5">
                         <h3 className="mb-0">{item.title}</h3>
                         <div className="mb-1 text-muted">{item.date}</div>
@@ -90,15 +91,18 @@ function Blog() {
             })
         }
     }
-
     return (
         <div className="m-4">
             {page === 'blogHome' && <BlogTeaser setPage={setPage} />}
             {page !== 'blogHome' && <HomeButton setPage={setPage} />}
             {/* page !== 'blogHome' && page /> */}
-            {/* <page /> */}
-        
-
+            {/* {/* <page />
+            {blogList.map((item, i) => {
+                {<BlogSprint3 page={page}
+            })} */}
+            {/* {blogList.map((item) => {
+                {page === item.title && item.blog}
+            })} */}
             {page === 'Blog 1' && <Blog1 />}
             {page === 'Week 3' && <BlogSprint3 />}
             {page === 'Week 4' && <BlogSprint4 />}

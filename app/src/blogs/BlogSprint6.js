@@ -53,7 +53,10 @@ function BlogSprint6() {
                               spin on it possibly. However it does scare me as I have no idea even where to start with it. I foresee 
                               myself wasting a lot of time on the front-end.
                             </p>
-                          <li></li>
+                          <li>IMDB clone</li>
+                            <p>IMDB but for session musicians. There are a ton of super talented musicians that have played on countless 
+                              songs that you have heard but otherwise would have to do a lot of research to connect the musician to the song.
+                            </p>
                         </ol>
                     </li>
 
@@ -61,6 +64,9 @@ function BlogSprint6() {
                         <h5>What surprised you about your first week in Python and how was it different from 
                           your first week in JavaScript?</h5>
                             <p>
+                              It was way easier than JavaScript because I can now use my knowledge of the possibilities of JavaScript and apply 
+                              them to python. I also went back and converted some of my old <a href='https://www.codewars.com/'>codewars</a> JS katas 
+                              and converted them to python. This was really helpful in learning the syntactical differences between the two languages.
                             </p>
                     </li>
 

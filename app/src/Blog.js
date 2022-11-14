@@ -47,14 +47,13 @@ const blogList = [
 
 function BlogTeaser(props) {
 
-    let elementId = 0
+    let elementKey = 0
     return (
         blogList.map((item) => {
-            elementId += 1
-            console.log(elementId)
+            elementKey += 1
             return (
-                <div className="row">
-                    <div className="col p-4 d-flex flex-column bg-dark bg-opacity-50 position-static m-5" key={elementId}>
+                <div className="row" key={elementKey}>
+                    <div className="col p-4 d-flex flex-column bg-dark bg-opacity-50 position-static m-5">
                         <h3 className="mb-0">{item.title}</h3>
                         <div className="mb-1 text-muted">{item.date}</div>
                         <p className="card-text mb-auto">{item.description}</p>

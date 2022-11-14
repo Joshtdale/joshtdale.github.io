@@ -108,7 +108,7 @@ function Blog() {
             {page === 'Week 4' && <BlogSprint4 />}
             {page === 'Week 5' && <BlogSprint5 />}
             {page === 'Week 6' && <BlogSprint6 />}
-            {page === 'Week 7' && <BlogSprint7 />}
+            {page === 'Week 7' && <BlogSprint7 blogList={blogList}/>}
         </div>
     )
 }

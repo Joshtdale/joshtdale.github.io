@@ -15,25 +15,25 @@ const blogList = [
     },
     {
         title: 'Week 3',
-        date: 'Nov 12',
+        date: 'Oct 7',
         description: 'The description for week 3',
         blog: <BlogSprint3 />
     },
     {
         title: 'Week 4',
-        date: 'Nov 12',
+        date: 'Oct 14',
         description: 'The description for week 4',
         blog: <BlogSprint4 />
     },
     {
         title: 'Week 5',
-        date: 'Nov 12',
+        date: 'Oct 21',
         description: 'The description for week 5',
         blog: <BlogSprint5 />
     },
     {
         title: 'Week 6',
-        date: 'Nov 12',
+        date: 'Oct 28',
         description: 'The description for week 6',
         blog: <BlogSprint6 />
     },
@@ -53,12 +53,14 @@ function BlogTeaser(props) {
             elementKey += 1
             return (
                 <div className="row" key={elementKey}>
+                    <button className="btn text-light" onClick={() => props.setPage(item.title)}>
                     <div className="col p-4 d-flex flex-column bg-dark bg-opacity-50 position-static m-5">
                         <h3 className="mb-0">{item.title}</h3>
                         <div className="mb-1 text-muted">{item.date}</div>
                         <p className="card-text mb-auto">{item.description}</p>
-                        <button className="btn text-light" onClick={() => props.setPage(item.title)}>Continue reading</button>
+                        {/* <button className="btn text-light" onClick={() => props.setPage(item.title)}>Continue reading</button> */}
                     </div>
+                    </button>
                 </div>
                 // <BlogTeaser title={item[0]} description={item[1]} setPage={setPage} />
             )

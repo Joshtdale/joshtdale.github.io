@@ -1,6 +1,7 @@
 body{
     background-color: #4a6350;
     color: rgba(255, 255, 255, 0.9);
+    scroll-behavior: smooth;
 }
 
 

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './Blog.css'
 import Blog1 from "./blogs/Blog1"
 import BlogSprint3 from "./blogs/BlogSprint3"
 import BlogSprint4 from "./blogs/BlogSprint4"
@@ -54,7 +55,7 @@ function BlogTeaser(props) {
             return (
                 <div className="row" key={elementKey}>
                     <button className="btn text-light" onClick={() => props.setPage(item.title)}>
-                    <div className="col p-4 d-flex flex-column bg-dark bg-opacity-50 position-static m-5">
+                    <div className="col p-4 d-flex flex-column teaserCard position-static m-5">
                         <h3 className="mb-0">{item.title}</h3>
                         <div className="mb-1 text-muted">{item.date}</div>
                         <p className="card-text mb-auto">{item.description}</p>

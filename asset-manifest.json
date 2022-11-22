@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/joshtdale.github.io/static/css/main.b294be74.css",
+    "main.js": "/joshtdale.github.io/static/js/main.a888eceb.js",
+    "static/media/scary-story-generator.png": "/joshtdale.github.io/static/media/scary-story-generator.cd638c4d592fb3898c2d.png",
+    "static/media/thundercat.png": "/joshtdale.github.io/static/media/thundercat.37a127443ebae21c83d7.png",
+    "static/media/coffee.jpg": "/joshtdale.github.io/static/media/coffee.13da98640b7d3b0427bd.jpg",
+    "static/media/weather-app.png": "/joshtdale.github.io/static/media/weather-app.a8feebcdd8adb8a21236.png",
+    "static/media/alarm-clock.png": "/joshtdale.github.io/static/media/alarm-clock.43bdc790c76dd875d0a6.png",
+    "static/media/tic-tac-toe.png": "/joshtdale.github.io/static/media/tic-tac-toe.13615d7f46ca21829296.png",
+    "static/media/mind-reader.png": "/joshtdale.github.io/static/media/mind-reader.1acc0aba33cbb18eae38.png",
+    "index.html": "/joshtdale.github.io/index.html",
+    "main.b294be74.css.map": "/joshtdale.github.io/static/css/main.b294be74.css.map",
+    "main.a888eceb.js.map": "/joshtdale.github.io/static/js/main.a888eceb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b294be74.css",
+    "static/js/main.a888eceb.js"
+  ]
+}

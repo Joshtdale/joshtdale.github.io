@@ -1,7 +1,29 @@
 .jumbotron {
-background-image: url(./images/IMG_4905.jpg);
+background-image: url(./images/coffee.jpg);
 height: 100vh;
+opacity: 0.9;
 }
+
+.jumbotron {
+    /* background-image: url('./images/IMG_7183.jpg'); */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    /* mix-blend-mode: darken; */
+}
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+        /* background-image: url('./images/IMG_7183\ \(1\).jpg'); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        background-position-x: 70%;
+    }
+}
+
 .home-container {
     height: 100vh;
     /* background-image: url(./images/IMG_4905.jpg); */

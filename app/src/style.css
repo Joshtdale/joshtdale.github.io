@@ -1,21 +1,23 @@
+
+/* ///////////Fonts/////////// */
+/* font-family: 'Cinzel', serif; */
+/* font-family: 'Lato', sans-serif; */
+
 body{
     background-color: #4a6350;
     color: rgba(255, 255, 255, 0.9);
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
 
-.jumbotron {
-    /* background-image: url('./images/IMG_7183.jpg'); */
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    background-position: center;
-    /* mix-blend-mode: darken; */
+.headFont {
+    font-family: 'Cinzel', serif;
 }
 
 .heroText {
     /* height: 75vh; */
+    
     margin-top: 0vh;
 }
 
@@ -38,7 +40,4 @@ body{
     background-color: #4a6350;
 } */
 
-.portCard {
-    height: 30vh;
-    margin-top: 20px;
-}
+

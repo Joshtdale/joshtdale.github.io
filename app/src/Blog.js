@@ -83,17 +83,17 @@ function HomeButton(props) {
 
 function Blog() {
     const [page, setPage] = useState('blogHome')
-    const [blog, setBlog] = useState()
+    // const [blog, setBlog] = useState()
 
-    function BlogMap() {
-        {
-            blogList.map((item) => {
-                // return (
-                { page === item.title && item.blog }
-                // )
-            })
-        }
-    }
+    // function BlogMap() {
+    //     {
+    //         blogList.map((item) => {
+    //             // return (
+    //             { page === item.title && item.blog }
+    //             // )
+    //         })
+    //     }
+    // }
     return (
         <div className="m-4">
             {page === 'blogHome' && <BlogTeaser setPage={setPage} />}

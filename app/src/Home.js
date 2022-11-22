@@ -10,7 +10,7 @@ function Home() {
                             <div className="col bioText headFont">
                                 <p className="fs-1 ml-1">Josh Dale</p>
                                 <p className="mx-3">Web developer</p>
-                                <p><a className="btn navbar-color btn-lg" href="https://joshtdale.github.io/pages/blog-post-sprint-3" role="button">Read my blog »</a></p>
+                                <p><a className="btn text-light opacity-75 btn-lg" href="https://joshtdale.github.io/pages/blog-post-sprint-3" role="button">Read my blog »</a></p>
                             </div>
                         </div>
                     </div>

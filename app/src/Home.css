@@ -1,5 +1,5 @@
 .jumbotron {
-background-image: url(./images/bg-coffee.jpg);
+background-image: url(./images/coffee.jpg);
 height: 100vh;
 opacity: 0.9;
 }
@@ -12,7 +12,7 @@ opacity: 0.9;
     height: 90vh;
     background-position: center;
     /* mix-blend-mode: darken; */
-};
+}
 
 @media screen and (max-width: 600px) {
     .jumbotron {
@@ -20,9 +20,9 @@ opacity: 0.9;
         background-repeat: no-repeat;
         background-size: cover;
         height: 90vh;
-        background-position-x: 75%;
+        background-position-x: 70%;
     }
-};
+}
 
 .home-container {
     height: 100vh;

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9c706ab7.css",
-    "main.js": "/static/js/main.a888eceb.js",
+    "main.js": "/static/js/main.f1be726e.js",
     "static/media/scary-story-generator.png": "/static/media/scary-story-generator.cd638c4d592fb3898c2d.png",
     "static/media/thundercat.png": "/static/media/thundercat.37a127443ebae21c83d7.png",
     "static/media/coffee.jpg": "/static/media/coffee.13da98640b7d3b0427bd.jpg",
@@ -11,10 +11,10 @@
     "static/media/mind-reader.png": "/static/media/mind-reader.1acc0aba33cbb18eae38.png",
     "index.html": "/index.html",
     "main.9c706ab7.css.map": "/static/css/main.9c706ab7.css.map",
-    "main.a888eceb.js.map": "/static/js/main.a888eceb.js.map"
+    "main.f1be726e.js.map": "/static/js/main.f1be726e.js.map"
   },
   "entrypoints": [
     "static/css/main.9c706ab7.css",
-    "static/js/main.a888eceb.js"
+    "static/js/main.f1be726e.js"
   ]
 }

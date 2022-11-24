@@ -1,18 +1,27 @@
 import { useState } from "react"
 import './Blog.css'
-import Blog1 from "./blogs/Blog1"
-// import BlogSprint3 from "./blogs/BlogSprint3"
 import BlogSprint6 from "./blogs/BlogSprint6"
 import BlogTemplate from "./blogs/BlogTemplate"
 
 const blogList = [
-    {
+    { // Intro Blog
         title: 'Blog 1',
         date: 'Aug 21',
         description: 'The first of 4 weeks of online onboarding before in person bootcamp',
-        blog: <Blog1 />
+        articleHeader: 'Josh Dale\'s Blog',
+        article: 'This is my first blog post of many documenting my journey through the process of becoming a web developer.',
+        articleHeader2: 'A little about me',
+        article2: 'I love building things and seeing results. I\'m hoping these characteristics are a good indicator that I will enjoy a career in web development. When I was a kid, I would take apart all my toys and try to put them back together. In middle school, I taught myself to solder and rewire my guitars. This skill proved useful in college when I quickly became the guy everyone went to for electric instrument repairs and modifications.',
+        qa: {
+            q1: 'Was your first week what you expected? Why? Why not?',
+            a1: 'This first week has been pretty brutal. I\'m still trying to figure out how to best juggle class and working a full time job.',
+            q2: 'What are you excited or eager to learn more about?',
+            a2: 'I can\'t wait to get more experience with the tools we are using in this course so that I can feel a little more comfortable with the course work.',
+            q3: 'What is something about you that can only be learned by reading this blog?',
+            a3: 'In college I was in a band that would travel and play at youth group conferences.'
+        }
     },
-    {
+    { // Week 3
         title: 'Week 3',
         date: 'Oct 7',
         description: 'The description for week 3',
@@ -22,7 +31,7 @@ const blogList = [
         articleHeader2: 'What is the significance of pseudocode?',
         article2: 'The art of coding can be very complex. Solving problems with code is not always easy and can involve many step that are heavily dependent on a sequential order. Pseudocoding before any code is written forces you to think about your code logically. When you are done, you should have a sort of road map that is easy to read an process as opposed to staring at a wall of code while trying to remember what each line does.' + <br></br> + 'Pseudocoding is definitely one of my weaknesses, I have trouble forgetting about specific programming languages. When ever I do spend extra time pseudocoding, it heavily reduces the time it take for me to build my projects. It takes out most of the headaches that come with writing code that is logic driven.'
     },
-    {
+    { // Week 4
         title: 'Week 4',
         date: 'Oct 14',
         description: 'The description for week 4',
@@ -37,7 +46,7 @@ const blogList = [
             a3: 'I think local storage seems to be an extremely useful tool that can enhance the user experience'
         }
     },
-    {
+    { // Week 5
         title: 'Week 5',
         date: 'Oct 21',
         description: 'The description for week 5',
@@ -51,7 +60,7 @@ const blogList = [
         }
         // blog: <BlogSprint5 />
     },
-    {
+    { // Week 6
         title: 'Week 6',
         date: 'Oct 28',
         description: 'The description for week 6',
@@ -74,7 +83,7 @@ const blogList = [
         },
         blog: <BlogSprint6 />
     },
-    {
+    { // Week 7
         title: 'Week 7',
         date: 'Nov 1',
         description: 'The description for week 7',
@@ -119,30 +128,12 @@ function HomeButton(props) {
 
 function Blog() {
     const [page, setPage] = useState('blogHome')
-    // const [blog, setBlog] = useState()
 
-    // function BlogMap() {
-    //     {
-    //         blogList.map((item) => {
-    //             // return (
-    //             { page === item.title && item.blog }
-    //             // )
-    //         })
-    //     }
-    // }
     return (
         <div className="m-4">
             {page === 'blogHome' && <BlogTeaser setPage={setPage} />}
             {page !== 'blogHome' && <HomeButton setPage={setPage} />}
-            {/* page !== 'blogHome' && page /> */}
-            {/* {/* <page />
-            {blogList.map((item, i) => {
-                {<BlogSprint3 page={page}
-            })} */}
-            {/* {blogList.map((item) => {
-                {page === item.title && item.blog}
-            })} */}
-            {page === 'Blog 1' && <Blog1 />}
+            {page === 'Blog 1' && <BlogTemplate blogList={blogList[0]}/>}
             {page === 'Week 3' && <BlogTemplate blogList={blogList[1]} />}
             {page === 'Week 4' && <BlogTemplate blogList={blogList[2]} />}
             {page === 'Week 5' && <BlogTemplate blogList={blogList[3]} />}

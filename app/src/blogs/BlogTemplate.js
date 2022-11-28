@@ -1,4 +1,5 @@
 import React from 'react'
+import '/workspace/joshtdale.github.io/app/src/BlogTemplate.css'
 
 function BlogTemplate(props) {
     let blog = props.blogList
@@ -31,7 +32,7 @@ function BlogTemplate(props) {
     }
     // console.log(blog)
     return (
-        <>
+        <div className='blogContainer'>
             <div className="row justify-content-center text-center">
                 {/* <div className="col"></div> */}
                 <div className="col-10 mt-5">
@@ -56,7 +57,7 @@ function BlogTemplate(props) {
             </div>
             {QA}
                 
-        </>
+        </div>
     )
 }
 export default BlogTemplate

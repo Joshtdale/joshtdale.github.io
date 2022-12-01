@@ -31,6 +31,6 @@ opacity: 0.9;
 
 .home-bottom{
     height: 50vh;
-    background-color: #4a6350;
+    background-color: rgb(74, 99, 80);
     z-index: 2;
 }

@@ -95,22 +95,24 @@ function BlogTeaser(props) {
 
     let elementKey = 0
     return (
-        blogList.map((item) => {
+        <div className="row d-flex justify-content-center">
+        {blogList.map((item) => {
             elementKey += 1
             return (
-                <div className="row" key={elementKey}>
-                    <div className="btn text-light" onClick={() => props.setPage(item.title)}>
-                    <div className="col p-4 d-flex flex-column teaserCard position-static m-5">
+                // <div className="row">
+                    // <div className="btn text-light" onClick={() => props.setPage(item.title)}>
+                    <div key={elementKey} className="col-sm-12 col-md-5 col-lg-5 p-4 teaserCard m-3 rounded">
                         <h3 className="mb-0">{item.title}</h3>
                         <div className="mb-1 text-muted">{item.date}</div>
-                        <p className="card-text mb-auto">{item.description}</p>
-                        {/* <button className="btn text-light" onClick={() => props.setPage(item.title)}>Continue reading</button> */}
+                        <p className="card-text">{item.description}</p>
+                        <button className="btn text-light border-secondary" onClick={() => props.setPage(item.title)}>Continue reading</button>
                     </div>
-                    </div>
-                </div>
+                    // </div>
                 // <BlogTeaser title={item[0]} description={item[1]} setPage={setPage} />
-            )
-        })
+                // </div>
+                )
+            })}
+            </div>
     )
 }
 

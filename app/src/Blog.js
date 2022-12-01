@@ -101,7 +101,7 @@ function BlogTeaser(props) {
             return (
                 // <div className="row">
                     // <div className="btn text-light" onClick={() => props.setPage(item.title)}>
-                    <div key={elementKey} className="col-sm-12 col-md-5 col-lg-5 p-4 teaserCard m-3 rounded">
+                    <div key={elementKey} className="col-sm-12 col-md-5 col-lg-5 p-4 teaserCard m-3">
                         <h3 className="mb-0">{item.title}</h3>
                         <div className="mb-1 text-muted">{item.date}</div>
                         <p className="card-text">{item.description}</p>
@@ -121,7 +121,7 @@ function HomeButton(props) {
     return (
         <div className="row">
             <div className="col p-4 d-flex flex-column position-static m-5">
-                <button className='btn btn-secondary' onClick={() => props.setPage('blogHome')}>Home</button>
+                <button className='btn blogHomeBtn' onClick={() => props.setPage('blogHome')}>Back</button>
             </div>
         </div>
     )

@@ -8,17 +8,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
 
-  // const [page, setPage] = useState('Home')
-
-  // const [page, setPage] = useState((() => {
-  //   return JSON.parse(localStorage.getItem("state")) || 'Home';
-  // }))
-
-  // useEffect(() => {
-  //   localStorage.setItem('state', JSON.stringify(page))
-  // }, [page]);
-
-
 
   return (
     <div>

@@ -1,3 +1,7 @@
+.portfolioContainer {
+    margin-top: 18vh;
+}
+
 .portfolioCards {
     background-position: center;
     background-size: cover;

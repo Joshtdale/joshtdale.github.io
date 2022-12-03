@@ -9,7 +9,7 @@ const baseClasses = 'card portfolioCards card-cover overflow-hidden text-bg-dark
         <div className="col portCard">
                 <div className={`${baseClasses}`}>
                     <div className="d-flex flex-column text-white text-shadow-1">
-                <iframe class="embed-responsive-item portfolioIframe" src={props.link}>
+                <iframe className="embed-responsive-item portfolioIframe" src={props.link}>
                         
                         <ul className="d-flex list-unstyled mt-auto">
                             <li className="me-auto">
@@ -61,7 +61,7 @@ function PortfolioCard(props){
 
 function Portfolio() {
     return (
-        <>
+        <div className='portfolioContainer'>
             <div className="row m-5">
                 <IFrameCard project={'tic-tac-toe'} link={'https://joshtdale.github.io/tic-tac-toe/'}/>
                 <PortfolioCard project={'mind-reader'} link={'https://joshtdale.github.io/mind-reader/'}/>
@@ -70,9 +70,9 @@ function Portfolio() {
             <div className="row m-5">
                 <IFrameCard project={'scary-story-generator'} link={'https://joshtdale.github.io/silly-story-generator/sandbox/sandbox.html'}/>
                 <IFrameCard project={'thundercat'} link={'https://dale-webpage-project.glitch.me/index.html'}/>
-                <PortfolioCard project={'weather-app'} link={'https://joshtdale.github.io/mind-reader/'}/>
+                <PortfolioCard project={'weather-app'} link={'https://joshtdale.github.io/weather-app/'}/>
             </div>
-        </>
+        </div>
     )
 };
 

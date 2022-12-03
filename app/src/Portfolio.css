@@ -7,9 +7,9 @@
     background-size: cover;
 }
 
-/* .portCard {
+.portCard {
     height: 30vh;
-} */
+}
 
 .portfolioIframe {
     height: 30vh;
@@ -41,3 +41,6 @@
     background-image: url('./images/weather-app.png');
 }
 
+.to-do-list {
+    background-image: url('./images/to-do-list.png');
+}

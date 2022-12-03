@@ -7,24 +7,24 @@ function Navbar(props) {
 
         <nav className="navbar navbar-expand-lg navbar-dark navbar-color fixed-top">
             <div className="container-fluid">
-                <h3 onClick={() => props.setPage('Home')} className='m-3 headFont'>Josh Dale</h3>
+                <h3 className='m-3 headFont'>Josh Dale</h3>
                 <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul className="nav navbar-nav">
                         <li className='nav-item'>
-                        <a href='#'><button onClick={() => props.setPage('Home')} className="btn px-2 text-white">
+                        <a href="/"><button className="btn px-2 text-white">
                                 Home
                             </button></a>
                         </li>
                         <li className='nav-item'>
-                            <a href='#'><button onClick={() => props.setPage('Portfolio')} className="btn px-2 text-white">
+                            <a href='/portfolio'><button className="btn px-2 text-white">
                                 Portfolio
                             </button></a>
                         </li>
                         <li className='nav-item'>
-                        <a href='#'><button onClick={() => props.setPage('Blog')} className="btn px-2 text-white">
+                        <a href='blog'><button className="btn px-2 text-white">
                                 Blog
                             </button></a>
                         </li>

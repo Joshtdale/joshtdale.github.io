@@ -35,7 +35,7 @@ function PortfolioCard(props){
     const baseClasses = 'card portfolioCards h-100 w-100 card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg'
     
         return (
-            <div className="col portCard">
+            <div className="col-sm-12 col-lg-3 portCard m-3">
                     <div className={`${baseClasses + ' ' + props.project}`}>
                         <div className="d-flex flex-column text-white text-shadow-1">
                             
@@ -62,14 +62,15 @@ function PortfolioCard(props){
 function Portfolio() {
     return (
         <div className='portfolioContainer'>
-            <div className="row m-5">
-                <IFrameCard project={'tic-tac-toe'} link={'https://joshtdale.github.io/tic-tac-toe/'}/>
-                <PortfolioCard project={'mind-reader'} link={'https://joshtdale.github.io/mind-reader/'}/>
-                <IFrameCard project={'alarm-clock'} link={'https://joshtdale.github.io/alarm-clock/'}/>
+            <div className="row">
+                <PortfolioCard project={'tic-tac-toe'} link={'https://joshtdale.github.io/tic-tac-toe/'}/>
+                <PortfolioCard project={'to-do-list'} link={'https://joshtdale.github.io/todo-list/'}/>
+                <PortfolioCard project={'alarm-clock'} link={'https://joshtdale.github.io/alarm-clock/'}/>
             </div>
-            <div className="row m-5">
-                <IFrameCard project={'scary-story-generator'} link={'https://joshtdale.github.io/silly-story-generator/sandbox/sandbox.html'}/>
-                <IFrameCard project={'thundercat'} link={'https://dale-webpage-project.glitch.me/index.html'}/>
+            <div className="row">
+                <PortfolioCard project={'scary-story-generator'} link={'https://joshtdale.github.io/silly-story-generator/sandbox/sandbox.html'}/>
+                <PortfolioCard project={'mind-reader'} link={'https://joshtdale.github.io/mind-reader/'}/>
+                <PortfolioCard project={'thundercat'} link={'https://dale-webpage-project.glitch.me/index.html'}/>
                 <PortfolioCard project={'weather-app'} link={'https://joshtdale.github.io/weather-app/'}/>
             </div>
         </div>

@@ -1,17 +1,17 @@
 .jumbotron {
-background-image: url(./images/coffee.jpg);
-height: 100vh;
-opacity: 0.9;
-}
-
-.jumbotron {
-    /* background-image: url('./images/IMG_7183.jpg'); */
-    /* background-position: center; */
+    background-image: url(./images/smoke.jpg);
+    height: 100vh;
+    opacity: 0.9;
+    position: relative;
+    min-height: 500px;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
     background-position: center;
-    /* mix-blend-mode: darken; */
+}
+
+.heroText {
+    position: absolute;
 }
 
 @media screen and (max-width: 600px) {
@@ -24,13 +24,9 @@ opacity: 0.9;
     }
 }
 
-.home-container {
-    height: 100vh;
-    /* background-image: url(./images/IMG_4905.jpg); */
-}
 
-.home-bottom{
+.home-bottom {
     height: 50vh;
     background-color: rgb(74, 99, 80);
-    z-index: 2;
+    /* z-index: 2; */
 }

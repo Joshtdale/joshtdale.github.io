@@ -14,17 +14,17 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul className="nav navbar-nav">
                         <li className='nav-item'>
-                        <a href='#'><button onClick={() => props.setPage('Home')} className="btn px-2 text-white">
+                        <a href="/"><button className="btn px-2 text-white">
                                 Home
                             </button></a>
                         </li>
                         <li className='nav-item'>
-                            <a href='#'><button onClick={() => props.setPage('Portfolio')} className="btn px-2 text-white">
+                            <a href='/portfolio'><button className="btn px-2 text-white">
                                 Portfolio
                             </button></a>
                         </li>
                         <li className='nav-item'>
-                        <a href='#'><button onClick={() => props.setPage('Blog')} className="btn px-2 text-white">
+                        <a href='blog'><button className="btn px-2 text-white">
                                 Blog
                             </button></a>
                         </li>

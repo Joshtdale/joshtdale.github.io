@@ -25,7 +25,7 @@ function Home() {
                             <div id='homeText' className="col bioText headFont">
                                 <p className="fs-1 ml-1">Josh Dale</p>
                                 <p className="mx-3">Web developer</p>
-                                <p className="btn text-light opacity-75 btn-lg" role="button">Read my blog »</p>
+                                <a href='/blog' className="btn text-light opacity-75 btn-lg" role="button">Read my blog »</a>
                             </div>
                         </div>
                     </div>

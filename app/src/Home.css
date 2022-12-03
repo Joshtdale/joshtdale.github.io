@@ -14,13 +14,21 @@
     position: absolute;
 }
 
+
+.bioText {
+    margin-top: 40vh !important;
+    margin-left: 20vw;
+}
+
 @media screen and (max-width: 600px) {
-    .jumbotron {
-        /* background-image: url('./images/IMG_7183\ \(1\).jpg'); */
+    /* .jumbotron {
         background-repeat: no-repeat;
         background-size: cover;
         height: 90vh;
         background-position-x: 70%;
+    } */
+    .bioText {
+        margin-left: 5vw;
     }
 }
 

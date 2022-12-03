@@ -22,10 +22,13 @@ function Home() {
                 <div className="col-sm-12 col-lg-12">
                     <div className="jumbotron">
                         <div className="row">
-                            <div id='homeText' className="col bioText headFont">
-                                <p className="fs-1 ml-1">Josh Dale</p>
-                                <p className="mx-3">Web developer</p>
-                                <a href='/blog' className="btn text-light opacity-75 btn-lg" role="button">Read my blog »</a>
+                            <div id='homeText' className="col-sm-10 col-md-6 col-lg-4 bioText">
+                                <p className="fs-1 headFont">Josh Dale</p>
+                                <p className='fs-6'>Full Stack Web Developer leveraging a Bachelor's
+                                degree in Media Communications from Asbury University to create a 
+                                synergy in technical skills and people. Five years in the coffee industry 
+                                working in customer service, wholesale, cafe management, and employee training.</p>
+                                <a href='/blog' className="btn text-light" role="button">Read my blog »</a>
                             </div>
                         </div>
                     </div>

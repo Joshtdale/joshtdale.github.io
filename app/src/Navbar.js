@@ -19,12 +19,12 @@ function Navbar(props) {
                             </button></a>
                         </li>
                         <li className='nav-item'>
-                            <a href='/portfolio'><button className="btn px-2 text-white">
+                            <a href='#/portfolio'><button className="btn px-2 text-white">
                                 Portfolio
                             </button></a>
                         </li>
                         <li className='nav-item'>
-                        <a href='blog'><button className="btn px-2 text-white">
+                        <a href='#/blog'><button className="btn px-2 text-white">
                                 Blog
                             </button></a>
                         </li>

@@ -3,7 +3,7 @@ import './Portfolio.css'
 import HTML from './images/stackIcons/html.png';
 import JavaScript from './images/stackIcons/java-script.png';
 import CSS from './images/stackIcons/css-3.png';
-import React from './images/stackIcons/react.png';
+import ReactJS from './images/stackIcons/react.png';
 
 let count = 0 // Counter for project card mapping
 

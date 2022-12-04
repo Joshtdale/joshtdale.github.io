@@ -48,3 +48,7 @@
 .secret-sauce {
     background-image: url('./images/secret-sauce.png');
 }
+
+.icons {
+    height: 5vh;
+}

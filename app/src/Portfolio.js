@@ -1,5 +1,9 @@
 import { React, useState } from 'react'
 import './Portfolio.css'
+import HTML from './images/stackIcons/html.png';
+import JavaScript from './images/stackIcons/java-script.png';
+import CSS from './images/stackIcons/css-3.png';
+import React from './images/stackIcons/react.png';
 
 let count = 0 // Counter for project card mapping
 
@@ -59,23 +63,23 @@ function PortfolioCard(props) {
                             </div>
                             <div className="col-12">
                                 <div>{project.description}</div>
-                        </div>
-                        <div className="col-12">
-                        <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
-                        <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
-                        </div>
+                            </div>
+                            <div className="col-12">
+                                <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
+                                <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
+                            </div>
+                            <div className="col-12">
+
+                                {project.stack.map((item) =>  (
+                                        <img title={item.name} className='icons m-1' src={item.icon} alt={item.name}></img>
+                                    )
+                                )}
+                            </div>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-5 col-lg-5 m-3">
                         <div className={`${baseClasses + ' ' + project.class}`}>
-                            {/* <div className="d-flex flex-column text-white text-shadow-1">
 
-                            <ul className="d-flex list-unstyled mt-auto">
-                                <li className="me-auto">
-                                    <a href={project.link}><button className="btn btn-secondary">View project</button></a>
-                                </li>
-                            </ul>
-                        </div> */}
                         </div>
                     </div>
 
@@ -105,11 +109,18 @@ function PortfolioCard(props) {
                             </div>
                             <div className="col-12">
                                 <div>{project.description}</div>
-                        </div>
-                        <div className="col-12">
-                        <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
-                        <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
-                        </div>
+                            </div>
+                            <div className="col-12">
+                                <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
+                                <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
+                            </div>
+                            <div className="col-12">
+
+                                {project.stack.map((item) =>  (
+                                        <img title={item.name} className='icons m-1' src={item.icon} alt={item.name}></img>
+                                    )
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -128,7 +139,17 @@ const projects = [ // Project data
         class: 'to-do-list',
         link: 'https://joshtdale.github.io/todo-list/',
         source: 'https://github.com/Joshtdale/todo-list',
-        stack: [],
+        stack: [
+            
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            }, 
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: 'This basic to-do list uses local storage to assist users'
     },
     { // Secret Sauce (React restaurant website)
@@ -136,7 +157,17 @@ const projects = [ // Project data
         class: 'secret-sauce',
         link: 'https://github.com/Joshtdale/react-restaurant',
         source: 'https://github.com/Joshtdale/react-restaurant/tree/dev',
-        stack: [],
+        stack: [
+            
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            }, 
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: 'Created and launched Restaurant Website for a fictional company as a showcase for skills with React.JS'
     },
     { // Deadly Tic Tac Toe
@@ -144,7 +175,20 @@ const projects = [ // Project data
         class: 'tic-tac-toe',
         link: 'https://joshtdale.github.io/tic-tac-toe/',
         source: 'https://github.com/Joshtdale/tic-tac-toe',
-        stack: [],
+        stack: [
+            {
+                icon: HTML,
+                name: 'HTML'
+            }, 
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            }, 
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: 'A deadly virtual tic-tac-toe utilizing VanillaJS'
     },
 
@@ -153,7 +197,20 @@ const projects = [ // Project data
         class: 'weather-app',
         link: 'https://joshtdale.github.io/weather-app/',
         source: 'https://github.com/Joshtdale/weather-app',
-        stack: [],
+        stack: [
+            {
+                icon: HTML,
+                name: 'HTML'
+            }, 
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            }, 
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: 'A basic weather app built with VanillaJS and Axios, This was our first week where we weren\'t allowed to write any HTML, all elements had to be generated with JavaScript.'
     },
     { // Alarm Clock
@@ -161,7 +218,20 @@ const projects = [ // Project data
         class: 'alarm-clock',
         link: 'https://joshtdale.github.io/alarm-clock/',
         source: 'https://github.com/Joshtdale/alarm-clock',
-        stack: [],
+        stack: [
+            {
+                icon: HTML,
+                name: 'HTML'
+            }, 
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            }, 
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: ''
     },
     { // Scary Story Generator
@@ -169,7 +239,20 @@ const projects = [ // Project data
         class: 'scary-story-generator',
         link: 'https://joshtdale.github.io/silly-story-generator/sandbox/sandbox.html',
         source: 'https://github.com/Joshtdale/silly-story-generator',
-        stack: [],
+        stack: [
+            {
+                icon: HTML,
+                name: 'HTML'
+            }, 
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            }, 
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: ''
     },
     { // Mind reader
@@ -177,7 +260,20 @@ const projects = [ // Project data
         class: 'mind-reader',
         link: 'https://joshtdale.github.io/mind-reader/',
         source: 'https://github.com/Joshtdale/mind-reader',
-        stack: [],
+        stack: [
+            {
+                icon: HTML,
+                name: 'HTML'
+            }, 
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            }, 
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: ''
     },
     { // Thundercat website
@@ -185,7 +281,16 @@ const projects = [ // Project data
         class: 'thundercat',
         link: 'https://dale-webpage-project.glitch.me/index.html',
         source: 'https://dale-webpage-project.glitch.me/index.html',
-        stack: [],
+        stack: [
+            {
+                icon: HTML,
+                name: 'HTML'
+            },
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
         description: ''
     },
 

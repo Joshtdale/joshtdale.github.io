@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d63b01a.css",
-    "main.js": "/static/js/main.f14fe27e.js",
+    "main.css": "/static/css/main.09cd4930.css",
+    "main.js": "/static/js/main.d552f311.js",
+    "static/media/secret-sauce.png": "/static/media/secret-sauce.ead6370651e0b04af015.png",
     "static/media/scary-story-generator.png": "/static/media/scary-story-generator.cd638c4d592fb3898c2d.png",
     "static/media/thundercat.png": "/static/media/thundercat.37a127443ebae21c83d7.png",
     "static/media/weather-app.png": "/static/media/weather-app.a8feebcdd8adb8a21236.png",
     "static/media/smoke.jpg": "/static/media/smoke.883b6823798bef601d04.jpg",
+    "static/media/react.png": "/static/media/react.6bcffb56bd0efaa47767.png",
     "static/media/to-do-list.png": "/static/media/to-do-list.061e4d1dd07cdb3bd106.png",
-    "static/media/alarm-clock.png": "/static/media/alarm-clock.43bdc790c76dd875d0a6.png",
+    "static/media/alarm-clock.png": "/static/media/alarm-clock.dbf386038d9c3ee8ac6a.png",
     "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.13615d7f46ca21829296.png",
     "static/media/mind-reader.png": "/static/media/mind-reader.1acc0aba33cbb18eae38.png",
     "index.html": "/index.html",
-    "main.3d63b01a.css.map": "/static/css/main.3d63b01a.css.map",
-    "main.f14fe27e.js.map": "/static/js/main.f14fe27e.js.map"
+    "main.09cd4930.css.map": "/static/css/main.09cd4930.css.map",
+    "main.d552f311.js.map": "/static/js/main.d552f311.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d63b01a.css",
-    "static/js/main.f14fe27e.js"
+    "static/css/main.09cd4930.css",
+    "static/js/main.d552f311.js"
   ]
 }

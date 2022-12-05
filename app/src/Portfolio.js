@@ -36,10 +36,50 @@ function IFrameCard(props) {
     )
 };
 
+function ProjectImage(props){
+    const baseClasses = 'card portfolioCards cardHeight card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg'
+    const project = props.project
+    return (
+        <div className="col-sm-12 col-md-5 col-lg-5 m-3">
+                        <div className={`${baseClasses + ' ' + project.class}`}>
+
+                        </div>
+                    </div>
+    )
+}
+
+function ProjectInfo(props){
+    
+    const project = props.project
+    return (
+        <div className="col d-flex justify-content-center container">
+            <div className="row text-center">
+                <div className="col-12">
+                    <h2 className='headFont m-4'>{project.name}</h2>
+                </div>
+                <div className="col-12">
+                    <div>{project.description}</div>
+                </div>
+                <div className="col-12">
+                    <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
+                    <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
+                </div>
+                <div className="col-12">
+
+                    {project.stack.map((item) =>  (
+                            <img key={props.key} title={item.name} className='icons m-1' src={item.icon} alt={item.name}></img>
+                        )
+                    )}
+                </div>
+            </div>
+        </div>
+    )
+}
+
 
 function PortfolioCard(props) {
 
-    const baseClasses = 'card portfolioCards h-100 w-100 card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg'
+    // const baseClasses = 'card portfolioCards h-100 w-100 card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg'
     const project = props.project
     // console.log(props.count)
 
@@ -53,76 +93,93 @@ function PortfolioCard(props) {
 
     // console.log(props.count, props.project)
     if (props.count % 2 !== 0 && !x.matches) {
+        // return (
+        //     <div className="col-sm-12 col-lg-10 portCard m-3">
+        //         <div className="row h-100 bg-secondary rounded bg-opacity-25">
+        //             {/* <div className="col d-flex justify-content-center container">
+        //                 <div className="row text-center">
+        //                     <div className="col-12">
+        //                         <h1 className='headFont'>{project.name}</h1>
+        //                     </div>
+        //                     <div className="col-12">
+        //                         <div>{project.description}</div>
+        //                     </div>
+        //                     <div className="col-12">
+        //                         <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
+        //                         <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
+        //                     </div>
+        //                     <div className="col-12">
+
+        //                         {project.stack.map((item) =>  (
+        //                                 <img title={item.name} className='icons m-1' src={item.icon} alt={item.name}></img>
+        //                             )
+        //                         )}
+        //                     </div>
+        //                 </div>
+        //             </div> */}
+        //             {/* <div className="col-sm-12 col-md-5 col-lg-5 m-3">
+        //                 <div className={`${baseClasses + ' ' + project.class}`}>
+
+        //                 </div>
+        //             </div> */}
+
+        //         </div>
+        //     </div>
+        // )
         return (
             <div className="col-sm-12 col-lg-10 portCard m-3">
-                <div className="row h-100 bg-secondary rounded bg-opacity-25">
-                    <div className="col d-flex justify-content-center container">
-                        <div className="row text-center">
-                            <div className="col-12">
-                                <h1 className='headFont'>{project.name}</h1>
-                            </div>
-                            <div className="col-12">
-                                <div>{project.description}</div>
-                            </div>
-                            <div className="col-12">
-                                <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
-                                <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
-                            </div>
-                            <div className="col-12">
-
-                                {project.stack.map((item) =>  (
-                                        <img title={item.name} className='icons m-1' src={item.icon} alt={item.name}></img>
-                                    )
-                                )}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-12 col-md-5 col-lg-5 m-3">
-                        <div className={`${baseClasses + ' ' + project.class}`}>
-
-                        </div>
-                    </div>
-
+                <div className="row mb-5 bg-secondary rounded bg-opacity-25">
+                    <ProjectInfo project={project} />
+                    <ProjectImage project={project} />
                 </div>
             </div>
+
         )
     } else {
+        // return (
+        //     <div className="col-sm-12 col-lg-10 portCard m-3">
+        //         <div className="row h-100 bg-secondary rounded bg-opacity-25">
+        //             <div className="col-sm-12 col-md-5 col-lg-5 m-3">
+        //                 <div className={`${baseClasses + ' ' + project.class}`}>
+        //                     {/* <div className="d-flex flex-column text-white text-shadow-1">
+
+        //                     <ul className="d-flex list-unstyled mt-auto">
+        //                         <li className="me-auto">
+        //                             <a href={project.link}><button className="btn btn-secondary">View project</button></a>
+        //                         </li>
+        //                     </ul>
+        //                 </div> */}
+        //                 </div>
+        //             </div>
+        //             <div className="col d-flex justify-content-center container">
+        //                 <div className="row text-center">
+        //                     <div className="col-12">
+        //                         <h1 className='headFont'>{project.name}</h1>
+        //                     </div>
+        //                     <div className="col-12">
+        //                         <div>{project.description}</div>
+        //                     </div>
+        //                     <div className="col-12">
+        //                         <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
+        //                         <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
+        //                     </div>
+        //                     <div className="col-12">
+
+        //                         {project.stack.map((item) =>  (
+        //                                 <img title={item.name} className='icons m-1' src={item.icon} alt={item.name}></img>
+        //                             )
+        //                         )}
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     </div>
+        // )
         return (
             <div className="col-sm-12 col-lg-10 portCard m-3">
-                <div className="row h-100 bg-secondary rounded bg-opacity-25">
-                    <div className="col-sm-12 col-md-5 col-lg-5 m-3">
-                        <div className={`${baseClasses + ' ' + project.class}`}>
-                            {/* <div className="d-flex flex-column text-white text-shadow-1">
-
-                            <ul className="d-flex list-unstyled mt-auto">
-                                <li className="me-auto">
-                                    <a href={project.link}><button className="btn btn-secondary">View project</button></a>
-                                </li>
-                            </ul>
-                        </div> */}
-                        </div>
-                    </div>
-                    <div className="col d-flex justify-content-center container">
-                        <div className="row text-center">
-                            <div className="col-12">
-                                <h1 className='headFont'>{project.name}</h1>
-                            </div>
-                            <div className="col-12">
-                                <div>{project.description}</div>
-                            </div>
-                            <div className="col-12">
-                                <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
-                                <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
-                            </div>
-                            <div className="col-12">
-
-                                {project.stack.map((item) =>  (
-                                        <img title={item.name} className='icons m-1' src={item.icon} alt={item.name}></img>
-                                    )
-                                )}
-                            </div>
-                        </div>
-                    </div>
+                <div className="row mb-5 bg-secondary rounded bg-opacity-25">
+                    <ProjectImage project={project} />
+                    <ProjectInfo project={project} />
                 </div>
             </div>
         )

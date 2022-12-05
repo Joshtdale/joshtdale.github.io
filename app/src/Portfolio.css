@@ -8,7 +8,7 @@
 }
 
 .portCard {
-    height: 38vh;
+    height: 50vh;
 }
 
 .portfolioIframe {
@@ -19,6 +19,7 @@
 
 .tic-tac-toe {
     background-image: url('./images/tic-tac-toe.png');
+    /* height: 30vh !important; */
 }
 
 .mind-reader {
@@ -47,8 +48,23 @@
 
 .secret-sauce {
     background-image: url('./images/secret-sauce.png');
+
 }
+
+.cardHeight{
+    height: 40vh !important;
+}
+
 
 .icons {
     height: 5vh;
+}
+
+@media screen and (max-width: 600px) {
+    .portCard {
+        height: 55vh;
+    }
+    .cardHeight{
+        height: 20vh !important;
+    }
 }

@@ -34,7 +34,7 @@ function Navbar(props) {
                             </button></a>
                         </li>
                         <li className='nav-item'>
-                        <a href='#'><button onClick={() => props.setPage('About')} className="btn px-2 text-white mt-1">
+                        <a href='#/about'><button className="btn px-2 text-white mt-1">
                                 About
                             </button></a>
                         </li>

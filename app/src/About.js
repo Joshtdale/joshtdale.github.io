@@ -28,12 +28,13 @@ function About() {
                     <div className="aboutCard">
                         <div className="row">
                             <div className="col text-center">
-                                <img className='aboutImg' src={profile} alt="Me" />
+                                <img className='aboutImg m-5' src={profile} alt="Me" />
                             </div>
                             <div className="col d-flex align-items-center text-center">
                                 <p className='m-5'>Full Stack Web Developer leveraging a Bachelor's
                                     degree in Media Communications from Asbury University to create a
-                                    synergy in technical skills and people.</p>
+                                    synergy in technical skills and people. Before web development I spend 5 years as a Café manager where I specialized
+                                    in employee training, coffee education, and latte art.</p>
                             </div>
                         </div>
                     </div>

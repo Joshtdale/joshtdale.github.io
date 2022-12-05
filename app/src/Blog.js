@@ -2,11 +2,13 @@ import { useState } from "react"
 import './Blog.css'
 import BlogSprint6 from "./blogs/BlogSprint6"
 import BlogTemplate from "./blogs/BlogTemplate"
+import { Route, Routes } from "react-router-dom";
 
 const blogList = [
     { // Intro Blog
         title: 'Blog 1',
         date: 'Aug 21',
+        slug: '/blog/1',
         description: 'The first of 4 weeks of online onboarding before in person bootcamp',
         articleHeader: 'Josh Dale\'s Blog',
         article: 'This is my first blog post of many documenting my journey through the process of becoming a web developer.',
@@ -35,7 +37,7 @@ const blogList = [
         title: 'Week 4',
         date: 'Oct 14',
         description: 'The description for week 4',
-        subHeader:'Intro to ReactJS',
+        subHeader: 'Intro to ReactJS',
         intro: 'This week was our first week with React. It was a rocky start, at first it seemed like we spent all this time learning JavaScript only to be confused by how similar yet different React is. Early on in the week, it all just magically clicked for me. This led to me being able to make large strides this week in terms of React concepts and being able to add stretch goals to my project.',
         qa: {
             q1: 'Do you think JavaScript Frameworks and Libraries are easy or hard to use? Why?',
@@ -68,15 +70,15 @@ const blogList = [
         qa: {
             q1: 'Now that you are halfway through bootcamp, what has been the biggest hurdle that you have gone past? What do you think is going to be the next biggest thing to power through?',
             a1: 'The toughest thing I\'ve had to deal with so far is time management. I definitely haven\'t gotten past it yet either. I\'m really enjoying this journey of learning how to program but it\'s been really hard trying to find a work life balance. I have a pregnant wife at home and we both are so busy during the week so I really try to keep the amount of work that I do outside of class down to a minimum. I struggle with the thought that I might be doing myself a disservice and that I should put more work in outside of class, especially when I see and hear about how much extra work some of my other classmates are putting in. Although so far I don\'t feel like I have put myself in a bad spot. Somehow I think I\'m managing to keep up with the class and I don\'t feel like my work is coming out less than average. I\'m telling myself that as soon as my projects start to suffer is when I\'ll kick it into overdrive outside of class time. So far nothing has been a bigger hurdle than this and I don\'t see anything else being harder than it.',
-            q2:'Compared to earlier, what are three ideas you might want to do for your final project? Are they the same ideas as before, or have they changed now that you understand more about the technology and your limitations?',
-            o1:'Small business website',
-            li1:'From the start of the bootcamp I had the idea to make a website for my friend\'s coffee cart business. I think it would be a good project for me since I think the strongest projects I\'ve had so far have been front-end forward. The website would need to have a form for business inquiries and I could add e-commerce to the site. I think this would have a good amount of back-end so that way I can show my back-end abilities as well as my skills with front-end design.',
-            o2:'Discord/messaging app clone',
-            li2:'I don\'t have many ideas for this yet as I have been really focused form the start on implementing my first idea as my final project. I think a messaging app could be a fun build as I could put a creative spin on it possibly. However it does scare me as I have no idea even where to start with it. I foresee myself wasting a lot of time on the front-end.',
-            o3:'IMDB clone',
-            li3:'IMDB but for session musicians. There are a ton of super talented musicians that have played on countless songs that you have heard but otherwise would have to do a lot of research to connect the musician to the song.',
-            q3:'What surprised you about your first week in Python and how was it different from your first week in JavaScript?',
-            a3:'It was way easier than JavaScript because I can now use my knowledge of the possibilities of JavaScript and apply them to python. I also went back and converted some of my old ',
+            q2: 'Compared to earlier, what are three ideas you might want to do for your final project? Are they the same ideas as before, or have they changed now that you understand more about the technology and your limitations?',
+            o1: 'Small business website',
+            li1: 'From the start of the bootcamp I had the idea to make a website for my friend\'s coffee cart business. I think it would be a good project for me since I think the strongest projects I\'ve had so far have been front-end forward. The website would need to have a form for business inquiries and I could add e-commerce to the site. I think this would have a good amount of back-end so that way I can show my back-end abilities as well as my skills with front-end design.',
+            o2: 'Discord/messaging app clone',
+            li2: 'I don\'t have many ideas for this yet as I have been really focused form the start on implementing my first idea as my final project. I think a messaging app could be a fun build as I could put a creative spin on it possibly. However it does scare me as I have no idea even where to start with it. I foresee myself wasting a lot of time on the front-end.',
+            o3: 'IMDB clone',
+            li3: 'IMDB but for session musicians. There are a ton of super talented musicians that have played on countless songs that you have heard but otherwise would have to do a lot of research to connect the musician to the song.',
+            q3: 'What surprised you about your first week in Python and how was it different from your first week in JavaScript?',
+            a3: 'It was way easier than JavaScript because I can now use my knowledge of the possibilities of JavaScript and apply them to python. I also went back and converted some of my old ',
             href: 'https://www.codewars.com/',
             a: 'JS katas and converted them to python. This was really helpful in learning the syntactical differences between the two languages.'
 
@@ -87,7 +89,7 @@ const blogList = [
         title: 'Week 7',
         date: 'Nov 1',
         description: 'The description for week 7',
-        blog: <BlogTemplate/>
+        blog: <BlogTemplate />
     },
 ]
 
@@ -95,11 +97,11 @@ function BlogTeaser(props) {
 
     let elementKey = 0
     return (
-        <div className="row d-flex justify-content-center">
-        {blogList.map((item) => {
-            elementKey += 1
-            return (
-                // <div className="row">
+        <div className="row d-flex justify-content-center teaserContainer">
+            {blogList.map((item) => {
+                elementKey += 1
+                return (
+                    // <div className="row">
                     // <div className="btn text-light" onClick={() => props.setPage(item.title)}>
                     <div key={elementKey} className="col-sm-12 col-md-5 col-lg-5 p-4 teaserCard m-3">
                         <h3 className="mb-0">{item.title}</h3>
@@ -108,11 +110,11 @@ function BlogTeaser(props) {
                         <button className="btn text-light border-secondary" onClick={() => props.setPage(item.title)}>Continue reading</button>
                     </div>
                     // </div>
-                // <BlogTeaser title={item[0]} description={item[1]} setPage={setPage} />
-                // </div>
+                    // <BlogTeaser title={item[0]} description={item[1]} setPage={setPage} />
+                    // </div>
                 )
             })}
-            </div>
+        </div>
     )
 }
 
@@ -120,7 +122,7 @@ function BlogTeaser(props) {
 function HomeButton(props) {
     return (
         <div className="row">
-            <div className="col p-4 d-flex flex-column position-static m-5">
+            <div className="col p-3 d-flex flex-column position-static mt-5">
                 <button className='btn blogHomeBtn' onClick={() => props.setPage('blogHome')}>Back</button>
             </div>
         </div>
@@ -133,14 +135,32 @@ function Blog() {
 
     return (
         <div className="m-4">
+            {/* <Routes>
+                <Route
+                exact
+                path='/*'
+                element={<BlogTeaser setPage={setPage} />}
+                />
+                <Route
+                exact
+                path='/blog/1'
+                element={<BlogTemplate blogList={blogList[0]}/>}
+            /> */}
+                {/* <Route
+                    exact
+                    path='/blog'
+                    element={<Blog />}
+                /> */}
+            {/* </Routes> */}
             {page === 'blogHome' && <BlogTeaser setPage={setPage} />}
+            
             {page !== 'blogHome' && <HomeButton setPage={setPage} />}
-            {page === 'Blog 1' && <BlogTemplate blogList={blogList[0]}/>}
+            {page === 'Blog 1' && <BlogTemplate blogList={blogList[0]} />}
             {page === 'Week 3' && <BlogTemplate blogList={blogList[1]} />}
             {page === 'Week 4' && <BlogTemplate blogList={blogList[2]} />}
             {page === 'Week 5' && <BlogTemplate blogList={blogList[3]} />}
-            {page === 'Week 6' && <BlogSprint6 blogList={blogList[4]}/>}
-            {page === 'Week 7' && <BlogTemplate blogList={blogList[5]}/>}
+            {page === 'Week 6' && <BlogSprint6 blogList={blogList[4]} />}
+            {page === 'Week 7' && <BlogTemplate blogList={blogList[5]} />}
         </div>
     )
 }

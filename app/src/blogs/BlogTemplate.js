@@ -35,7 +35,7 @@ function BlogTemplate(props) {
         <div className='blogContainer'>
             <div className="row justify-content-center text-center">
                 {/* <div className="col"></div> */}
-                <div className="col-10 mt-5">
+                <div className="col-10 mt-2">
                     <h1>{blog.title}</h1>
                     <p>{blog.date}</p>
                     <p>{blog.description}</p>

@@ -28,17 +28,17 @@ function Home() {
                                 degree in Media Communications from Asbury University to create a 
                                 synergy in technical skills and people. Five years in the coffee industry 
                                 working in customer service, wholesale, cafe management, and employee training.</p>
-                                <a href='/blog' className="btn text-light" role="button">Read my blog »</a>
+                                <a href='#/blog' className="btn text-light" role="button">Read my blog »</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="row home-bottom">
+            {/* <div className="row home-bottom">
                 <div className="col">
 
                 </div>
-            </div>
+            </div> */}
 
         </div>
     );

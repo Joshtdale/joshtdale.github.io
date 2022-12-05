@@ -5,6 +5,7 @@ import Home from './Home';
 import Portfolio from './Portfolio';
 import Blog from './Blog';
 import Contact from './Contact';
+import About from './About';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
           exact
           path='/blog/*'
           element={<Blog/>}
+        />
+        <Route
+          exact
+          path='/about'
+          element={<About/>}
         />
         
       </Routes>

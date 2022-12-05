@@ -3,7 +3,10 @@ import './Portfolio.css'
 import HTML from './images/stackIcons/html.png';
 import JavaScript from './images/stackIcons/java-script.png';
 import CSS from './images/stackIcons/css-3.png';
-import ReactJS from './images/stackIcons/react.png';
+import ReactJS from './images/stackIcons/react.svg';
+import Python from './images/stackIcons/python.png';
+import Postgres from './images/stackIcons/postgres.png';
+import Bootstrap from './images/stackIcons/bootstrap.svg';
 
 let count = 0 // Counter for project card mapping
 
@@ -197,10 +200,17 @@ const projects = [ // Project data
         link: 'https://joshtdale.github.io/todo-list/',
         source: 'https://github.com/Joshtdale/todo-list',
         stack: [
-            
+            {
+                icon: ReactJS,
+                name: 'ReactJS'
+            }, 
             {
                 icon: JavaScript,
                 name: 'JavaScript'
+            }, 
+            {
+                icon: Bootstrap,
+                name: 'Bootstrap'
             }, 
             {
                 icon: CSS,
@@ -215,11 +225,26 @@ const projects = [ // Project data
         link: 'https://github.com/Joshtdale/react-restaurant',
         source: 'https://github.com/Joshtdale/react-restaurant/tree/dev',
         stack: [
-            
+            {
+                icon: ReactJS,
+                name: 'ReactJS'
+            }, 
+            {
+                icon: Python,
+                name: 'Python'
+            },
+            {
+                icon: Postgres,
+                name: 'Postgresql'
+            },
             {
                 icon: JavaScript,
                 name: 'JavaScript'
-            }, 
+            },
+            {
+                icon: Bootstrap,
+                name: 'Bootstrap'
+            },  
             {
                 icon: CSS,
                 name: 'CSS'
@@ -240,7 +265,11 @@ const projects = [ // Project data
             {
                 icon: JavaScript,
                 name: 'JavaScript'
-            }, 
+            },
+            {
+                icon: Bootstrap,
+                name: 'Bootstrap'
+            },  
             {
                 icon: CSS,
                 name: 'CSS'
@@ -262,7 +291,11 @@ const projects = [ // Project data
             {
                 icon: JavaScript,
                 name: 'JavaScript'
-            }, 
+            },
+            {
+                icon: Bootstrap,
+                name: 'Bootstrap'
+            },  
             {
                 icon: CSS,
                 name: 'CSS'

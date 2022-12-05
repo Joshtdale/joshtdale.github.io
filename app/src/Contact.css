@@ -1,18 +1,14 @@
-.teaserCard {
-    background-color: rgba(54, 55, 58, 0.5);
+.contactCard {
+    margin-top: 18vh !important;
+    
+}
+
+.contactBg {
+    /* background-color: rgba(54, 55, 58, 0.5); */
     /* background-color: rgba(74, 99, 80, 0.598); */
     /* color: rgba(255, 255, 255, 0.9); */
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 2px 4px 10px hsla(0, 0%, 0%, .3),
     2px 4px 20px hsla(0, 0%, 0%, .2);
-};
-
-.blogHomeBtn {
-    background-color: rgba(54, 55, 58, 0.7);
-    border: 1px solid rgba(54, 55, 58, 0.7);
-}
-
-.teaserContainer {
-    margin-top: 10vh !important;
 }

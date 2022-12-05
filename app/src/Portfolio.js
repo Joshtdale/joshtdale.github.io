@@ -55,7 +55,7 @@ function ProjectInfo(props){
         <div className="col d-flex justify-content-center container">
             <div className="row text-center">
                 <div className="col-12">
-                    <h2 className='headFont m-4'>{project.name}</h2>
+                    <h2 className='m-4'>{project.name}</h2>
                 </div>
                 <div className="col-12">
                     <div>{project.description}</div>
@@ -128,7 +128,7 @@ function PortfolioCard(props) {
         // )
         return (
             <div className="col-sm-12 col-lg-10 portCard m-3">
-                <div className="row mb-5 bg-secondary rounded bg-opacity-25">
+                <div className="row mb-5">
                     <ProjectInfo project={project} />
                     <ProjectImage project={project} />
                 </div>
@@ -177,7 +177,7 @@ function PortfolioCard(props) {
         // )
         return (
             <div className="col-sm-12 col-lg-10 portCard m-3">
-                <div className="row mb-5 bg-secondary rounded bg-opacity-25">
+                <div className="row mb-5">
                     <ProjectImage project={project} />
                     <ProjectInfo project={project} />
                 </div>

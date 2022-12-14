@@ -58,6 +58,10 @@
 
 }
 
+.chatr {
+    background-image: url('./images/chatr.png');
+}
+
 .cardHeight{
     height: 40vh !important;
 }
@@ -67,9 +71,13 @@
     height: 5vh;
 }
 
+.description {
+    height: 15vh;
+}
+
 @media screen and (max-width: 600px) {
     .portCard {
-        height: 55vh;
+        height: 68vh;
     }
     .cardHeight{
         height: 20vh !important;

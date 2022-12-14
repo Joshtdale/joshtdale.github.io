@@ -34,13 +34,13 @@ function About() {
     return (
         <div className='container'>
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 d-flex justify-content-center">
                     <div className="aboutCard">
                         <div className="row">
                             <div className="col text-center">
                                 <img className='aboutImg m-5' src={profile} alt="Me" />
                             </div>
-                            <div className="col d-flex align-items-center text-center">
+                            <div className="col d-flex justify-content-center align-items-center text-center">
                                 <div className="row w-100">
                                     <div className="col-12">
                                         <p className='m-5'>Full Stack Web Developer leveraging a Bachelor's

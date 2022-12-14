@@ -7,6 +7,8 @@ import ReactJS from './images/stackIcons/react.svg';
 import Python from './images/stackIcons/python.png';
 import Postgres from './images/stackIcons/postgres.png';
 import Bootstrap from './images/stackIcons/bootstrap.svg';
+import django from './images/stackIcons/django.png';
+
 
 let count = 0 // Counter for project card mapping
 
@@ -60,7 +62,7 @@ function ProjectInfo(props){
                 <div className="col-12">
                     <h2 className='m-4'>{project.name}</h2>
                 </div>
-                <div className="col-12">
+                <div className="col-12 description overflow-auto">
                     <div>{project.description}</div>
                 </div>
                 <div className="col-12">
@@ -131,7 +133,7 @@ function PortfolioCard(props) {
         // )
         return (
             <div className="col-sm-12 col-lg-10 portCard m-3">
-                <div className="row mb-5">
+                <div className="row d-flex justify-content-center mt-4">
                     <ProjectInfo project={project} />
                     <ProjectImage project={project} />
                 </div>
@@ -180,7 +182,7 @@ function PortfolioCard(props) {
         // )
         return (
             <div className="col-sm-12 col-lg-10 portCard m-3">
-                <div className="row mb-5">
+                <div className="row d-flex justify-content-center mt-4">
                     <ProjectImage project={project} />
                     <ProjectInfo project={project} />
                 </div>
@@ -194,6 +196,43 @@ function PortfolioCard(props) {
 
 
 const projects = [ // Project data
+    { // ChatR
+        name: 'ChatR',
+        class: 'chatr',
+        link: 'https://chatr-db.web.app/',
+        source: 'https://github.com/Joshtdale/messaging-app',
+        stack: [
+            {
+                icon: ReactJS,
+                name: 'ReactJS'
+            },
+            {
+                icon: django,
+                name: 'django' 
+            },
+            {
+                icon: Python,
+                name: 'Python'
+            },
+            {
+                icon: Postgres,
+                name: 'Postgresql'
+            },
+            {
+                icon: JavaScript,
+                name: 'JavaScript'
+            },
+            {
+                icon: Bootstrap,
+                name: 'Bootstrap'
+            },  
+            {
+                icon: CSS,
+                name: 'CSS'
+            },
+        ],
+        description: 'For this project I set out to clone iMessage. To be honest, this was not my first choice solely because it scared me. The thought of having to figure out how to copy one of the most well know applications on the planet was extremely intimidating. Yet it\'s those very reasons that convinced me I needed to do it. I knew getting out of my comfort zone would be the best way for me to learn. Why iMessage? I think Apple is the king of simplistic design. If you think about all of the features that iMessage has and the minimal amount of buttons, it is amazing how they can create a user experience that is so intuitive.'
+    },
     { // To-do List
         name: 'To-do List',
         class: 'to-do-list',
@@ -232,6 +271,10 @@ const projects = [ // Project data
             {
                 icon: Python,
                 name: 'Python'
+            },
+            {
+                icon: django,
+                name: 'django' 
             },
             {
                 icon: Postgres,

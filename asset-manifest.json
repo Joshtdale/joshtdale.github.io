@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30547da2.css",
-    "main.js": "/static/js/main.0c91f866.js",
+    "main.css": "/static/css/main.2416f3c3.css",
+    "main.js": "/static/js/main.c363efce.js",
     "static/media/dale-josh-2.jpg": "/static/media/dale-josh-2.295a70beeb1d047b5c2d.jpg",
     "static/media/secret-sauce.png": "/static/media/secret-sauce.ead6370651e0b04af015.png",
     "static/media/scary-story-generator.png": "/static/media/scary-story-generator.cd638c4d592fb3898c2d.png",
@@ -14,24 +14,26 @@
     "static/media/smoke.jpg": "/static/media/smoke.883b6823798bef601d04.jpg",
     "static/media/to-do-list.png": "/static/media/to-do-list.061e4d1dd07cdb3bd106.png",
     "static/media/alarm-clock.png": "/static/media/alarm-clock.dbf386038d9c3ee8ac6a.png",
+    "static/media/chatr.png": "/static/media/chatr.6f1028669482d8195736.png",
     "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.13615d7f46ca21829296.png",
     "static/media/mind-reader.png": "/static/media/mind-reader.1acc0aba33cbb18eae38.png",
+    "static/media/josh_dale_resume.pdf": "/static/media/josh_dale_resume.bfd21469d394a5cf57d9.pdf",
     "static/media/me.jpg": "/static/media/me.ab13017d763498eedf45.jpg",
+    "static/media/django.png": "/static/media/django.a06ca9d357879dfefa3f.png",
     "static/media/python.png": "/static/media/python.14a9fe046ce9b57d1e97.png",
     "static/media/react.svg": "/static/media/react.03d6696612ee0753678bac62b6b4144b.svg",
     "static/media/Website.svg": "/static/media/Website.7aa84929f2ba1efb026fc27624d0159b.svg",
-    "static/media/Instagram.svg": "/static/media/Instagram.d2d6c4f81519c47bd90e0718c29383c2.svg",
     "static/media/Phone.svg": "/static/media/Phone.50385e10d48918007196969a51503d41.svg",
     "static/media/bootstrap.svg": "/static/media/bootstrap.0c611dd88b988ea49c726b1327fac731.svg",
     "static/media/Github.svg": "/static/media/Github.b16d6c3c1708e3e0281647cfe7e34d77.svg",
-    "static/media/Youtube.svg": "/static/media/Youtube.8d1e569769b9f889d0dbae2f39a721bd.svg",
     "static/media/Email.svg": "/static/media/Email.650a175dd34777c7c304ab3f57c063dd.svg",
     "index.html": "/index.html",
-    "main.30547da2.css.map": "/static/css/main.30547da2.css.map",
-    "main.0c91f866.js.map": "/static/js/main.0c91f866.js.map"
+    "static/media/linkedin.svg": "/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
+    "main.2416f3c3.css.map": "/static/css/main.2416f3c3.css.map",
+    "main.c363efce.js.map": "/static/js/main.c363efce.js.map"
   },
   "entrypoints": [
-    "static/css/main.30547da2.css",
-    "static/js/main.0c91f866.js"
+    "static/css/main.2416f3c3.css",
+    "static/js/main.c363efce.js"
   ]
 }

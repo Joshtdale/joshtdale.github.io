@@ -62,7 +62,7 @@ function ProjectInfo(props){
                 <div className="col-12">
                     <h2 className='m-4'>{project.name}</h2>
                 </div>
-                <div className="col-12 description overflow-auto">
+                <div className="col-12 description">
                     <div>{project.description}</div>
                 </div>
                 <div className="col-12">

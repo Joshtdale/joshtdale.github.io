@@ -73,13 +73,21 @@
 
 .description {
     height: 15vh;
+    /* box-shadow: black; */
+    overflow-y: scroll; 
 }
+
 
 @media screen and (max-width: 600px) {
     .portCard {
-        height: 68vh;
+        height: 77vh;
+        width: 93vw !important;
     }
     .cardHeight{
         height: 20vh !important;
     }
 }
+
+
+
+

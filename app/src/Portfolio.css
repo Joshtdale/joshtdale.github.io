@@ -1,10 +1,15 @@
 .portfolioContainer {
-    margin-top: 18vh;
+    margin-top: 23vh;
 }
 
 .portfolioCards {
     background-position: center;
     background-size: cover;
+    /* height: 25vh !important; */
+}
+
+.imgheight {
+    height: 25vh !important;
 }
 
 .portCard {
@@ -84,7 +89,7 @@
         width: 93vw !important;
     }
     .cardHeight{
-        height: 20vh !important;
+        height: 27vh !important;
     }
 }
 

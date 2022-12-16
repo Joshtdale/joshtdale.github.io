@@ -45,7 +45,7 @@ function ProjectImage(props){
     const baseClasses = 'card portfolioCards cardHeight card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg'
     const project = props.project
     return (
-        <div className="col-sm-12 col-md-5 col-lg-5 m-3">
+        <div className="col-sm-12 col-md-5 col-lg-5 imgheight m-3">
                         <div className={`${baseClasses + ' ' + project.class}`}>
 
                         </div>
@@ -66,8 +66,12 @@ function ProjectInfo(props){
                     <div>{project.description}</div>
                 </div>
                 <div className="col-12">
-                    <a href={project.link}><button className="btn btn-secondary m-2">View live project</button></a>
-                    <a href={project.source}><button className="btn btn-secondary m-2">View source code</button></a>
+                    {project.link &&
+                        <a href={project.link} target='blank_'><button className="btn btn-secondary m-2">View live project</button></a>
+
+                    }
+                        
+                    <a href={project.source} target='blank_'><button className="btn btn-secondary m-2">View source code</button></a>
                 </div>
                 <div className="col-12">
 
@@ -231,7 +235,7 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: 'For this project I set out to clone iMessage. To be honest, this was not my first choice solely because it scared me. The thought of having to figure out how to copy one of the most well know applications on the planet was extremely intimidating. Yet it\'s those very reasons that convinced me I needed to do it. I knew getting out of my comfort zone would be the best way for me to learn. Why iMessage? I think Apple is the king of simplistic design. If you think about all of the features that iMessage has and the minimal amount of buttons, it is amazing how they can create a user experience that is so intuitive.'
+        description: 'My capstone project for the Awesome Inc. Bootcamp. Fun fact about this project in particular, my Wife gave birth to our first child during the second of the two weeks we were allotted to complete the project. This definitely added some stress and caused me to miss out on a few days worth of work. For this project I set out to clone iMessage. To be honest, this was not my first choice solely because it scared me. The thought of having to figure out how to copy one of the most well know applications on the planet was extremely intimidating. Yet it\'s those very reasons that convinced me I needed to do it. I knew getting out of my comfort zone would be the best way for me to learn. Why iMessage? I think Apple is the king of simplistic design. If you think about all of the features that iMessage has and the minimal amount of buttons, it is amazing how they can create a user experience that is so intuitive.'
     },
     { // To-do List
         name: 'To-do List',
@@ -256,12 +260,12 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: 'This basic to-do list uses local storage to assist users'
+        description: 'This basic to-do list uses local storage to assist users. This was made during my second week of learning React.js and I personally think this is one of the best projects that I\'ve made. React really clicked with me and I think that is very apparent in how this project came together both in the design and logic.'
     },
     { // Secret Sauce (React restaurant website)
         name: 'Secret Sauce',
         class: 'secret-sauce',
-        link: 'https://github.com/Joshtdale/react-restaurant',
+        // link: 'https://github.com/Joshtdale/react-restaurant',
         source: 'https://github.com/Joshtdale/react-restaurant/tree/dev',
         stack: [
             {
@@ -293,7 +297,7 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: 'Created and launched Restaurant Website for a fictional company as a showcase for skills with React.JS'
+        description: 'Created and launched Restaurant Website for a fictional company as a showcase for skills with React.js. This was my first project built in React. React clicked early on for me and I quickly became comfortable with it. Allowing me to go above and beyond the project requirements. In addition to the project requirements, I was able to add a shopping cart.'
     },
     { // Deadly Tic Tac Toe
         name: 'Deadly Tic Tac Toe',
@@ -318,9 +322,8 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: 'A deadly virtual tic-tac-toe utilizing VanillaJS'
+        description: 'A deadly virtual tic-tac-toe utilizing VanillaJS. One of my favorite projects. A true test of logical thinking and pseudocoding.'
     },
-
     { // Weather app
         name: 'Weather app',
         class: 'weather-app',
@@ -365,7 +368,7 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: ''
+        description: 'My first project with JavaScript with no pre-made code snippets or step by step instruction, only a prompt. "Build an alarm clock using JavaScript." Since I had already had a little experience with DOM style manipulation, I was able to have some fun with this project. When the alarm is triggered, It changes the background, font colors and plays Daydreaming by Radiohead.'
     },
     { // Scary Story Generator
         name: 'Scary Story Generator',
@@ -386,7 +389,7 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: ''
+        description: 'My fun take on MDN\'s Silly Story Generator project. Taking my love of classic horror films and combining it with a madlib format application.'
     },
     { // Mind reader
         name: 'Mind reader',
@@ -407,7 +410,7 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: ''
+        description: 'A fun project utilizing a simple math equation to seemingly read the user\'s mind. One of our first projects at Awesome Inc. utilizing Javascript and dynamic element generation.'
     },
     { // Thundercat website
         name: 'Thundercat website',
@@ -424,7 +427,7 @@ const projects = [ // Project data
                 name: 'CSS'
             },
         ],
-        description: ''
+        description: 'One of my first webpages. Built during Awesome Inc\'s Into to web development course with only HTML and CSS. This was integral in my learning of CSS grid.'
     },
 
 ]

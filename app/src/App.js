@@ -7,12 +7,14 @@ import Blog from './Blog';
 import Contact from './Contact';
 import About from './About';
 import { Route, Routes } from "react-router-dom";
+import BlogTemplate from './blogs/BlogTemplate';
+import blogList from './BlogList'
 
 function App() {
-
+// console.log(blogList)
 
   return (
-    <div>
+    <>
       <Navbar />
       {/* <Router> */}
       <Routes>
@@ -35,7 +37,9 @@ function App() {
           exact
           path='/blog/*'
           element={<Blog/>}
-        />
+        >
+          {/* <Route path='blog1' element={<BlogTemplate blogList={blogList[0]}  />} />  */}
+        </Route>
         <Route
           exact
           path='/about'
@@ -47,7 +51,7 @@ function App() {
 
       {/* </Router> */}
 
-    </div>
+    </>
   );
 }
 

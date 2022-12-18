@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 }
 
 .heroText {
@@ -21,14 +22,16 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* .jumbotron {
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 90vh;
-        background-position-x: 70%;
-    } */
+    .jumbotron {
+        display: flex;
+        justify-content: center;
+    }
     .bioText {
         margin-left: 5vw;
+        width: 100vw !important;
+        margin-left: 0;
+        margin: 10px;
+
     }
 }
 

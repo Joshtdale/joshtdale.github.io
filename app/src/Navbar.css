@@ -8,6 +8,10 @@ header {
 
 }
 
+.navContainer {
+    width: 80vw;
+}
+
 .nav {
     /* font-family: 'Titillium Web'; */
     text-transform: uppercase;

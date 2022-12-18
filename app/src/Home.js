@@ -19,15 +19,15 @@ function Home() {
     return (
         <div className='home-container'>
             <div className="row">
-                <div className="col-sm-12 col-lg-12">
+                <div className="col-sm-12 col-lg-12 p-0">
                     <div className="jumbotron">
                         <div className="row">
                             <div id='homeText' className="col-sm-10 col-md-6 col-lg-4 bioText">
                                 <p className="fs-1 headFont">Josh Dale</p>
-                                <p className='fs-6'>Full Stack Web Developer leveraging a Bachelor's
+                                <div className='fs-6'>Full Stack Web Developer leveraging a Bachelor's
                                 degree in Media Communications from Asbury University to create a 
                                 synergy in technical skills and people. Five years in the coffee industry 
-                                working in customer service, wholesale, cafe management, and employee training.</p>
+                                working in customer service, wholesale, cafe management, and employee training.</div>
                                 <a href='#/blog' className="btn text-light" role="button">Read my blog »</a>
                             </div>
                         </div>

@@ -7,11 +7,16 @@
     --main-grey: rgba(54, 55, 58, 0.9)
 }
 
+#root {
+    overflow-x: hidden;
+}
+
 body{
     background-color: var(--main-green);
     color: rgba(255, 255, 255, 0.9);
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 

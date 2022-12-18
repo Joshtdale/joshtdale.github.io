@@ -6,7 +6,7 @@ function BlogTemplate(props) {
     let QA = null
     if (blog.qa){
         QA = <div className="row justify-content-center">
-        <div className="col-10 m-5 card bg-dark bg-opacity-50">
+        <div className="col-10 m-5 card bg-dark bg-opacity-50 text-light">
             <h3 className="text-center mb-4">Weekly Q&A</h3>
             <ul>
                 <li>
